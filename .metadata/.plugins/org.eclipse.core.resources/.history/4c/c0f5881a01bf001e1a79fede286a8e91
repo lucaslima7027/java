@@ -1,0 +1,31 @@
+package teste;
+
+public class teste1 {
+
+	public static int[] Bubble (int numeros[]) {
+		int tamanho = numeros.length;
+		int aux;
+		
+		for(int i =0; i < tamanho-1; i++) {
+			for (int j = 0; j < tamanho - 1 - i; j++ ) {
+				if (numeros[j] > numeros[j+1]) {
+					aux = numeros[j];
+					numeros[j] = numeros[j + 1];
+					numeros[j+1] = aux;
+				}
+			}
+		}
+		return numeros;
+	}
+	
+	public static void main(String entrda[]) {
+		int vet[] = {9,5,1,3,10,8,4,6,7,2};
+		vet = Bubble(vet);
+		
+		for(int i = 0; i < 10; i++) {
+		
+		System.out.println(vet[i]);
+		}
+	}
+
+}

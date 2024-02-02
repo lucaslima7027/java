@@ -1,0 +1,21 @@
+package teste;
+
+public class teste1 {
+
+	public static int Fat (int n) {
+		int aux = 1;
+		
+		if (n == 0) {
+			return 1;
+		}
+		else {
+			aux = n * Fat(n-1);
+			return aux;
+		}
+	}
+	
+	public static void main(String entrda[]) {
+		System.out.println(Fat (5));
+	}
+
+}
