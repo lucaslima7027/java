@@ -19,9 +19,4 @@ public class Funcionario extends Cliente {
 	public double getSalario() {
 		return salario;
 	}
-	
-	public double CalculaComissao(int vendas) {
-		double salarioNovo = this.salario + (100 * vendas);
-		return salarioNovo;
-	}
 }

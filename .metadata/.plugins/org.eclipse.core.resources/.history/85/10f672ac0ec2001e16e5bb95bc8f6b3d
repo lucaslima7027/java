@@ -21,7 +21,7 @@ public class Funcionario extends Cliente {
 	}
 	
 	public double CalculaComissao(int vendas) {
-		double salarioNovo = this.salario + (100 * vendas);
+		double salarioNovo = this.salario * vendas;
 		return salarioNovo;
 	}
 }

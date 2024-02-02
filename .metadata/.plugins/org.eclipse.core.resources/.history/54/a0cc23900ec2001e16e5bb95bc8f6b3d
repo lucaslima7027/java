@@ -16,7 +16,7 @@ public class Main {
 		ana.setSalario(1500);
 		
 		System.out.println(ana.getNome()+" tem " + ana.getIdade() + " matricula n# " + ana.getMatricula() + " e recebe " + ana.getSalario());
-		System.out.println(ana.CalculaComissao(5));
+
 	}
 
 }
