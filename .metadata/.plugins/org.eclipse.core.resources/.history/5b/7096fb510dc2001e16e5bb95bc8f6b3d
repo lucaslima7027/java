@@ -20,5 +20,11 @@ public class Cliente {
 		return idade;
 	}
 	
+	public static void main(String args[]) {
+		Cliente lucas = new Cliente();
+		lucas.setNome("Lucas de O. Lima");
+		lucas.setIdade(24);
+		
+		System.out.println(lucas.getNome()+" tem " + lucas.getIdade());
+	}
 }
-
